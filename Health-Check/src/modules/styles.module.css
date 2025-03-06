@@ -1,0 +1,149 @@
+/* More CSS*/
+
+.container {
+  margin-left: 2%;
+  box-shadow: 0px 4px 60px 0px #e5e5e5;
+  padding: 2% 1.5%;
+  border-radius: 0px;
+  margin-top: 30px;
+  width: 95%;
+}
+
+.container h3 {
+  margin-bottom: 20px;
+}
+
+.profileform {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.container .formgroup {
+  margin-bottom: 2px;
+  margin-right: 20px;
+  padding: 1em 0em;
+}
+
+.container .profileform button {
+  font-size: 11px;
+  margin-left: 2em;
+  padding: 1em 2em;
+  font-weight: 600;
+  margin-left: 10px;
+  margin-top: 25px;
+}
+
+.container .profileform select {
+  margin-top: 0.8em;
+}
+
+.container .formgroup label {
+  font-size: 10px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .formgroup select,
+input {
+  height: 2.7rem;
+  width: 16rem;
+  padding: 5px 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  justify-content: space-between;
+  background-color: #adfdf01a;
+  color: rgb(24, 107, 93);
+  outline: none;
+}
+
+.container .formgroup select,
+textarea,
+input {
+  outline: none;
+}
+
+.container .formcontrol select {
+  margin-top: 2px;
+}
+
+.container .btnprimary {
+  background-color: rgba(30, 158, 136, 1);
+  color: #fff;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.container .btnprimary:hover {
+  background-color: rgba(59, 168, 150, 0.8);
+}
+
+.container .btnsecondary {
+  background-color: rgba(220, 246, 242, 0.8);
+  color: rgba(59, 168, 150, 0.8);
+  padding: 10px 22px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 4px;
+}
+
+.container .btnsecondary:hover {
+  background-color: rgba(59, 168, 150, 0.8);
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .container .formgroup {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .container h3 {
+    margin-top: 20px;
+  }
+  .container .profileform button {
+    font-size: 8px;
+    font-weight: 400;
+    margin-left: 10px;
+    margin-top: 5px;
+    justify-content: center;
+  }
+
+  .container .formgroups {
+    width: 100%;
+    display: flex;
+  }
+
+  .container button {
+    width: 80%;
+    padding: 20px;
+    display: table-column;
+    border-radius: none;
+  }
+
+  .container .formrow {
+    flex-wrap: wrap;
+  }
+
+  .container {
+    width: 100%;
+    margin-left: 2%;
+    padding: 2% 5%;
+    border-radius: 0px;
+    margin-top: 30px;
+  }
+
+  .profileform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}

@@ -1,0 +1,31 @@
+.profile_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2%;
+}
+
+.butt {
+  padding: 0.2em 2em;
+}
+.buttons {
+  background-color: rgba(30, 158, 136, 1);
+  color: #fff;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttons:hover {
+  background-color: rgba(61, 185, 164, 1);
+}
+
+
+
+@media (max-width: 768px) {
+  .profile_container {
+    display: flex;
+    flex-direction: column;
+  }
+}

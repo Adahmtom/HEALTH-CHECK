@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-direction: column;
+ 
+  justify-content: center;
+  background-color: #24c0a61a;
+  color: rgba(30, 158, 136, 1);
+  padding: 4%;
+  border-radius: 0px;
+ 
+  width: 100%;
+  justify-self: center;
+}
+
+.container h1 {
+  font-size: 28px;
+  margin-top: 5px;
+}
+.container p {
+  font-size: 14px;
+}
+
+@media (max-width: 700px) {
+  .container {
+    padding: 6% 2%;
+    border-radius: 0px;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    width: 100%;
+  }
+  .container h1 {
+    font-size: 20px;
+  }
+}

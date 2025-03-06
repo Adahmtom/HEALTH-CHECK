@@ -1,0 +1,81 @@
+.profile-form {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.header{
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 14px;
+  margin-bottom: 20px;
+ 
+}
+
+.form-group select,
+input {
+  height: 3rem;
+ 
+}
+
+.form-group select,textarea,
+input {
+  outline: none;
+  margin-top: 10px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Arrange input pairs with space between them */
+}
+
+.form-row .form-group {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.btn-primary {
+  background-color: rgba(30, 158, 136, 1);
+  color: #fff;
+  padding: 18px 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: rgba(61, 185, 164, 1);
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .form-row {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 0; /* Remove margin-right to stack inputs in one column */
+    margin-bottom: 10px; /* Add margin-bottom for spacing between inputs */
+  }
+  .btn-primary {
+   width: 100%;
+   padding: 30px;
+   border-radius: none;
+  }
+}

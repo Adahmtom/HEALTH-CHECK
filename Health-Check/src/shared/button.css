@@ -1,0 +1,143 @@
+.btnContainer {
+	display: flex;
+	justify-content: flex-start;
+}
+.right {
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 1rem;
+}
+.multiBtn {
+	display: flex;
+	background: white;
+	padding: 1rem;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.btn {
+	/* height: 3rem; */
+	outline: none;
+	padding: 1.2rem 3rem;
+	/* border-radius: 10px; */
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	text-decoration: none;
+	border: none;
+	font-size: 0.8rem;
+	outline: none;
+	align-items: center;
+	margin-right: 1rem;
+	
+}
+
+button:disabled {
+	background: whitesmoke;
+	color: black;
+	cursor: not-allowed;
+}
+.btnBlack {
+	background: #000;
+	color: white;
+}
+.btnYellow {
+	background:rgba(97, 221, 200, 0.1);
+	color: #000;
+	font-weight: bold;
+}
+.btnGray {
+	background: #e7e7e7;
+	color: #000;
+}
+
+.btnGreen {
+	background: #489DCB;
+	color: #fff;
+	font-weight: bold;
+}
+
+.btnGreenPry {
+	border: 2px solid #489DCB;
+	color:#489DCB;
+	font-weight: bold;
+	background-color: #fff;
+}
+
+button.btnRedTxt {
+	background: #fff;
+	color: #c84141;
+}
+
+.btnRed {
+	background: crimson;
+	color: #fff;
+}
+
+button.btnRedTxt {
+	background: #fff;
+	color: #c84141;
+}
+.form-wrapper button.btnRed {
+	background: crimson;
+	color: #fff;
+}
+.btnPurple {
+	background: #640ad2;
+	color: white;
+}
+.btnPurpleOutline {
+	border: 1px solid #640ad2;
+	color: #640ad2;
+}
+.btnWhite {
+	background: white;
+	color: black;
+}
+.btnSuccess {
+	background: #28a745;
+	color: white;
+}
+.btnSuccessOutline {
+	border: 1px solid #28a745;
+	color: #28a745;
+}
+.btnSMtable {
+	height: 2.5rem;
+	outline: none;
+	padding: 0.5rem 1rem;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	text-decoration: none;
+	border: none;
+	outline: none;
+	align-items: center;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.loading {
+	height: 30px;
+	width: 30px;
+	background: rgba(0, 0, 0, 0.2);
+	border-radius: 50%;
+	border: 2px solid rgba(0, 0, 0, 0.4);
+	border-top-color: #fff;
+	border-bottom-color: #fff;
+	animation: spinner3 800ms ease infinite;
+}
+
+@keyframes spinner3 {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.btn {
+		font-size: 0.6rem;
+		padding: 1rem 2.2rem;
+	}
+}

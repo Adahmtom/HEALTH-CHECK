@@ -1,0 +1,129 @@
+.requestDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.requestDetails h1 {
+  font-size: 29px;
+}
+
+.requestDetail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 0em;
+  margin-bottom: 1rem;
+}
+
+.requestDetail h3 {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.requestDetail h4 {
+  margin-top: 0.3em;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.requestDetail > div {
+  flex-basis: calc((60% - 2rem) / 2);
+  box-sizing: border-box;
+  margin-bottom: 2rem;
+}
+
+.textContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.textContainer p {
+  font-weight: 700;
+  font-size: 18px;
+}
+.textContainer h4 {
+  font-weight: 400;
+  font-size: 17px;
+}
+.btnContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+.sample_formcontainer{
+  display: flex;
+  flex-direction: column;
+  margin-left: 3%;
+  margin-top: 4%;
+  width: 25%;
+  
+}
+.sample_formcontainer label{
+  margin-top: 20px;
+  font-size: 14px;
+}
+.buttons {
+  
+  background-color: rgba(30, 158, 136, 1);
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.buttons:hover {
+  background-color: rgba(61, 185, 164, 1);
+}
+
+.sample_formcontainer  textarea{
+  min-height: 10rem;
+  border: 2px solid rgba(61, 185, 164, 1) ;
+  padding: .5rem  .8rem;
+
+}
+
+.sample_formcontainer input {
+  border: 1px solid black;
+  padding: .5rem 1rem;
+}
+
+.fileContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fileContainer img {
+  width: 70px;
+  height: 70px;
+}
+.small {
+  flex-basis: 32%;
+}
+.meduim {
+  flex-basis: 50%;
+}
+.large {
+  flex-basis: 100%;
+}
+
+@media (max-width: 600px) {
+  .sample_formcontainer{
+    display: flex;
+    flex-direction: column;
+  
+    margin-top: 4%;
+    width: 94%;
+  }
+  .sample_formcontainer  textarea{
+    min-height: 8rem;
+    padding: .5rem  .8rem;
+    border: 2px solid rgba(61, 185, 164, 1) ;
+    width: 100%;
+  
+  }
+}

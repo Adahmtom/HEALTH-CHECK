@@ -1,0 +1,98 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 250px;
+   
+}
+
+.picture {
+    width: 150px;
+    height: 150px;
+   border-radius: 50%;
+  
+}
+
+.picture img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.btn {
+    background-color: rgba(15, 199, 168, 0.1);
+    color: black;
+   width: 100%;
+
+   
+}
+
+
+.uploadWrapper {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+
+.uploadBtn {
+    border: 1px dotted #BDBDBD;
+    color: gray;
+
+   
+}
+
+
+.uploadWrapper {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+
+.uploadBtn {
+    border: 1px dotted #BDBDBD;
+    color: gray;
+    background-color: #FAFAFA;
+   
+}
+
+.uploadWrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+
+}
+.uploadBtn_ {
+    border: 1px dotted #BDBDBD;
+    color: rgb(255, 255, 255);
+    background-color: rgba(30, 158, 136, 1);
+    padding:  .8rem 1rem;
+   border-radius: 6px;
+    margin-top: 15px;
+}
+  
+  .loading {
+    height: 20px;
+    width: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+    animation: spinner3 800ms ease infinite;
+  }
+  
+  @keyframes spinner3 {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  button:disabled {
+    background: whitesmoke;
+    color: black;
+    cursor: not-allowed;
+  }

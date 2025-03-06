@@ -1,0 +1,119 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 3%;
+  justify-content: center;
+  background-color: #24c0a61a;
+  /* color: rgba(30, 158, 136, 1); */
+  padding: 5%;
+  border-radius: 3px;
+  width: 90%;
+  margin-top: 10px;
+  justify-self: center;
+}
+
+.header h3 {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 18px;
+  margin-left: 3%;
+}
+
+.circleActive {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(30, 158, 136, 1);
+  margin-right: 0px;
+}
+
+.circleInactive {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: gray;
+  margin-right: 10px;
+}
+
+.line {
+  height: 2.5px;
+  background-color: transparent;
+  flex: 1;
+  margin-top: 24px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-bottom: 1px dotted black;
+}
+
+.circleText {
+  font-size: 8px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  line-height: 9px;
+  color: black;
+  margin-top: 60px;
+}
+
+.container h1 {
+  font-size: 24px;
+  margin-top: 5px;
+}
+.container p {
+  font-size: 14px;
+}
+
+@media (max-width: 700px) {
+  .container {
+    padding: 4% 2%;
+    border-radius: 0px;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    width: 94%;
+  }
+
+  .circleActive,
+  .circleInactive {
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+  }
+
+  .header h3 {
+    font-size: 12px;
+  }
+
+  .line {
+    /* height: 15px; */
+    background-color: transparent;
+    flex: 1;
+    margin-top: -2px;
+    margin-left: 5px;
+    margin-right: 10px;
+
+    /* border-bottom: 2px dotted black; */
+  }
+
+  .circleText {
+    display: none;
+    /* font-size: 8px;
+    font-weight: bold;
+    text-align: right;
+    line-height: 9px;
+    color: black;
+    margin-top: 9px;
+    margin-left: 3px;
+    padding: 5% 0;
+    block-size: hidden; */
+  }
+
+  .container h1 {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,20 @@
+.charts {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.Chart_container{
+    
+    width: 100%;
+}
+
+
+@media screen and (max-width: 700px) {
+    .Chart_container{
+        height: 500px;
+        width: 100%;
+        
+    }
+  }

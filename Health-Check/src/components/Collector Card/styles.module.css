@@ -1,0 +1,81 @@
+.card {
+    display: flex;
+    width: 100%;
+    flex-basis: 24%;
+    padding: .8rem 2rem;
+   cursor: pointer;
+    background: white;
+    text-decoration: none;
+    color: black;
+    justify-content: center;
+    align-items: flex-start;
+    transition: 2s ease-in-out;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.button_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.card p {
+    font-size: 14px;
+    margin-bottom: 1rem;
+}
+
+
+
+.card h1 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card h2 {
+    font-size: .8rem;
+    margin-top: 1rem;
+    color: rgba(30, 158, 136, 1);
+}
+
+
+/* Media Query */
+
+@media screen and (min-width: 1300px) and (max-width: 1600px) {
+    .card {
+        flex-basis: 22%;
+    }
+}
+
+
+@media screen and (max-width: 1300px) {
+    .card {
+        flex-basis: 22%;
+    }
+}
+
+@media screen and (min-width: 1050px) and (max-width: 1300px) {
+    .card {
+        flex-basis: 48%;
+    }
+}
+
+
+@media screen and (min-width: 700px) and (max-width: 1050px) {
+    .card {
+        flex-basis: 46%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .card {
+        flex-basis: 46%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .card {
+        flex-basis: 100%;
+    }
+}

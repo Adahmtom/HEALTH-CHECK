@@ -1,0 +1,71 @@
+/* CSS for the table */
+.patientCard {
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+  padding: 1%;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.patientCards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.patientCards > div {
+  flex-basis: calc((60% - 0.1rem) / 2.5);
+  max-height: 6rem;
+  position: static;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.patientCard .label {
+  color: #ffffff;
+  background-color: rgba(30, 158, 136, 1);
+  display: flex;
+  flex-direction: row;
+  flex-basis: 30%;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 45px;
+}
+
+.patientCard tr {
+  height: 3rem;
+  padding: 0 1rem;
+}
+
+.patientCard .patientInfo {
+  font-size: 16px;
+  font-weight: 400;
+  height: 2rem;
+  margin-bottom: 20px;
+}
+
+.patientCard td {
+  padding: 1rem 1rem;
+  white-space: normal;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .patientCard .label {
+    flex-basis: 40%;
+  }
+
+  .patientCard .patientInfo {
+    flex-basis: 60%;
+  }
+
+  .patientCards > div {
+    flex-basis: 100%;
+  }
+}

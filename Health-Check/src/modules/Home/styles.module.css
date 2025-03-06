@@ -1,0 +1,191 @@
+.homepage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  overflow-y: auto;
+}
+.home {
+  height: 100vh;
+  background: linear-gradient(to top, rgb(44, 44, 44), rgba(75, 74, 74, 0.5)),
+    url("../../assets/frame1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  animation: slideBg 40s ease-in-out infinite 8s;
+  animation-timing-function: ease-in-out;
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  padding: 3% 5%;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* nav styles */
+.home .homeNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.home .title .logo {
+  margin-bottom: 10px;
+  height: 100px;
+}
+
+.home .logo img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.home .homeNav .admin a {
+  border: #7dc7ba 1px solid;
+  color: #7dc7ba;
+  display: flex;
+  /* align-items: center; */
+
+  font-size: 0.75rem;
+  outline: none;
+  text-align: center;
+  padding: 0.4rem 1.2rem;
+}
+
+.home main {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+
+  margin-top: -50px;
+}
+
+.home main .title h1 {
+  font-size: 1.6rem;
+  color: white;
+  font-weight: 500;
+}
+.home main .title p {
+  font-size: 0.9rem;
+  color: #fff;
+  line-height: 30px;
+  width: 60%;
+  margin-top: 15px;
+}
+
+.homepage .btnContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: -60px;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+@keyframes slideBg {
+  0% {
+    background: url("../../assets/frame1.png");
+    background-size: cover;
+  }
+
+  50% {
+    background: url("../../assets/frame2.png");
+    background-size: cover;
+  }
+
+  100% {
+    background: url("../../assets/frame2.png");
+
+    background-size: cover;
+  }
+}
+
+/* Responsive styles */
+
+@media screen and (min-width: 1024px) {
+  .home {
+    height: 85vh;
+  }
+  .home main {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 708px) {
+  .home {
+    min-height: 60vh;
+  }
+  .home main .title h1 {
+    font-size: 4rem;
+  }
+  .home .homeNav {
+    width: 94%;
+  }
+
+  .home .homeNav .logo {
+    width: 70px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 768px) {
+  .home .homeNav {
+    margin-top: 30px;
+    width: 94%;
+  }
+  .home .homeNav .admin a {
+    font-size: 1rem;
+  }
+  .home main .btnWrapper .registerLink {
+    font-size: 0.8rem;
+  }
+  .home main {
+    gap: 3rem;
+  }
+
+  .home main .title h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .home {
+    min-height: 80vh;
+  }
+  @keyframes slideBg {
+    0% {
+      background: url("../../assets/frame3.png");
+      background-size: cover;
+      background-position: center center;
+    }
+
+    50% {
+      background: url("../../assets/frame2.png");
+      background-size: cover;
+      background-position: center center;
+    }
+
+    100% {
+      background: url("../../assets/frame1.png");
+      background-position: center center;
+      background-size: cover;
+    }
+  }
+  .home .homeNav {
+    margin-top: 20px;
+    width: 94%;
+  }
+  .home main {
+    margin-top: 10px;
+  }
+  .home main .title h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+
+  .home main .title p {
+    width: 100%;
+  }
+}

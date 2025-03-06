@@ -1,0 +1,109 @@
+/* .requestDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+} */
+
+.requestDetails h1 {
+  font-size: 29px;
+}
+
+/* CSS for the request detail from  here */
+
+.requestDetail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 0em;
+  margin-bottom: 1rem;
+  margin-top: -30px;
+}
+
+.requestDetail h3 {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.requestDetail h4 {
+  margin-top: 0.3em;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.requestDetail > div {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-left: 14px;
+  margin-right: 14px;
+  flex-basis: calc((60% - 2rem) / 2);
+  box-sizing: border-box;
+  margin-bottom: 0.5rem;
+}
+
+.textContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.request h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-left: 15px;
+  margin-bottom: 25px;
+}
+
+.textContainer p {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.textContainer h4 {
+  font-weight: 400;
+  font-size: 17px;
+}
+.btnButton button {
+  margin-left: 20px;
+  background-color: rgba(30, 158, 136, 1);
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.btnButton button:hover {
+  background-color: rgba(61, 185, 164, 1);
+}
+.fileContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fileContainer img {
+  width: 70px;
+  height: 70px;
+}
+.small {
+  flex-basis: 32%;
+}
+.meduim {
+  flex-basis: 50%;
+}
+.large {
+  flex-basis: 100%;
+}
+
+/* CSS for the request detail responsiveness */
+@media (max-width: 768px) {
+  .request h2 {
+    margin-left: -3.5rem;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: static;
+  }
+}

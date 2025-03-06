@@ -1,0 +1,51 @@
+.header {
+  display: flex;
+  font-size: 20px;
+  color: black;
+  padding: 1rem 1.5rem;
+  margin-bottom: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+}
+
+.title {
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.user {
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+  margin-right: 1em;
+}
+
+.profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 5px;
+}
+
+.name {
+  overflow: hidden;
+}
+
+.profile img {
+  object-fit: cover;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 700px) {
+  .header {
+    padding: 0rem 0.5rem;
+  }
+  .title {
+    font-size: 14px;
+  }
+}

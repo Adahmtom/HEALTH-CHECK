@@ -1,0 +1,52 @@
+
+.menubar {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+   
+    margin-top: 20px;
+   
+  }
+  
+  .menubar ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0 2%;
+    border-bottom: 4px solid #CFCFCF ;
+    /* padding: 0.5rem; */
+    width: 100%;
+    justify-content: space-between;
+    
+    
+  }
+  
+  .menubar ul li {
+    display: flex;
+    padding: 1rem .5rem;
+    position: relative;
+    top: 4px;
+    text-align: center;
+    text-decoration: none;
+   
+   
+  }
+
+  .menubar ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: .8rem;
+  }
+ 
+  .remote {
+    border-bottom: 5px solid #489DCB ;
+  }
+
+  .approveIcon{
+    font-weight: 800;
+    margin-right: 5px;
+  }

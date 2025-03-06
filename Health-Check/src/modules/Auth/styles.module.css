@@ -1,0 +1,126 @@
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+  
+  .logo {
+    font-size: 48px;
+    margin-bottom: 10px;
+    height: 80px;
+    width: 80px;
+  }
+
+  .logo img{
+    height: 100%;
+    width: 100%;
+  }
+
+  
+  
+  .header {
+    font-size: 24px;
+   font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+  
+  .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .input-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+   
+  }
+
+  .input {
+    flex: 1;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    background-image: url('../../assets/eye-slash-solid.svg'); /* Replace with your icon path */
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 95% center;
+    height: 40px;
+  }
+
+
+
+  .email-input {
+    flex: 1;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    background-image: url('../../assets/mail.svg'); 
+    background-repeat: no-repeat;
+    background-size: 20px; 
+    background-position: 95% center;
+    height: 40px;
+  }
+
+  .name-input {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    background-image: url('../../assets/user.svg'); 
+    background-repeat: no-repeat;
+    background-size: 20px; 
+    background-position: 95% center;
+    height: 40px;
+  }
+  
+  .submit-button {
+    width: 100%;
+    background-color:rgba(30, 158, 136, 1);
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .register-text {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
+  .register-text a{
+    color: rgba(30, 158, 136, 1);
+  }
+
+  .input:focus {
+    outline: none; 
+  }
+
+  .email-input:focus {
+    outline: none; 
+  }
+
+  .name-input:focus {
+    outline: none; 
+  }

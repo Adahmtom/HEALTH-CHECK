@@ -1,0 +1,115 @@
+.container {
+  display: flex;
+  height: 100vh;
+  background: url("../../../src/assets/errorpage.jpg");
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  padding: 5%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.btnContainer {
+  width: 15%;
+  margin-top: 2rem;
+}
+.butt {
+  padding: 0.2em 2em;
+}
+.buttons {
+  background-color: rgba(30, 158, 136, 1);
+  color: #fff;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttons:hover {
+  background-color: rgba(61, 185, 164, 1);
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 1050px) and (max-width: 1300px) {
+}
+
+@media screen and (min-width: 700px) and (max-width: 1050px) {
+  h1 {
+    margin-top: 10%;
+    font-size: 1.2rem;
+  }
+  h2 {
+    font-size: 0.8rem;
+    margin-top: 5px;
+  }
+
+  .btnContainer {
+    width: 30%;
+
+    margin-bottom: 5%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-position: center;
+  }
+
+  h1 {
+    margin-top: 10%;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  h2 {
+    font-size: 0.8rem;
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  .btnContainer {
+    width: 60%;
+    justify-self: center;
+    margin-bottom: 5%;
+    margin-left: 5%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  h1 {
+    margin-top: 10%;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  h2 {
+    font-size: 0.8rem;
+    margin-top: 5px;
+    text-align: center;
+  }
+  .btnContainer {
+    width: 100%;
+    justify-self: center;
+    margin-bottom: 10%;
+    margin-left: 5%;
+  }
+}
