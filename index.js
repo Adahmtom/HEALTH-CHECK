@@ -12,14 +12,12 @@ app.use(cors());
 app.use(morgan("dev"));
 
 // Connect to MongoDB
-mongoose
-  .connect(process.env.MONGO_URI, {
+mongoose.connect("mongodb://localhost:27017/", {
     useNewUrlParser: true,
-    useUnifiedTopology: true,
+    useUnifiedTopology: true
   })
-  .then(() => console.log("MongoDB Connected"))
-  .catch((err) => console.log(err));
-
+  .then(() => console.log("Connected successfully"))
+  .catch(err => console.log("MongoDB Connection Error:", err));
 // Routes
 app.use("/api/v1/auth", require("./routes/authRoutes"));
 
